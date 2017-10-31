@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="www.foodoku.in.www" version="3" versionCode="11" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Foodoku</name>
+    <description>
+         Now order delicious food from any resturant from all over cuttack and get delivered to your doorsteps.
+    </description>
+    <author email="foodoku2@gmail.com" href="https://foodoku.in">
+        foodoku.in
+    </author>
+    <icon src="icon.png" />
+    <content src="index.html" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.5.3" />
+    <gap:plugin name="com.paypal.cordova.mobilesdk" source="npm" />
+    <gap:plugin name="cordova-plugin-device" source="npm" />
+    <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
+    <gap:plugin name="cordova-plugin-geolocation" source="npm" />
+    <gap:plugin name="cordova-plugin-network-information" source="npm" />
+    <gap:plugin name="cordova-plugin-request-location-accuracy" source="npm" />
+    <gap:plugin name="cordova-plugin-x-toast" source="npm" />
+    <gap:plugin name="cordova-plugin-fastrde-checkgps" source="npm" />
+    <gap:plugin source="git" spec="https://github.com/rodrigo-martinezd/cordova-dialog-gps.git" />
+    <gap:plugin source="git" spec="https://github.com/razorpay/razorpay-cordova.git" />
+    <gap:plugin name="cordova-plugin-media" source="npm" />
+    <gap:plugin name="cordova.plugins.diagnostic" source="npm" />
+    <gap:plugin name="cordova-plugin-googlemaps" source="npm" spec="1.3.9">
+        <param name="API_KEY_FOR_ANDROID" value="AIzaSyDsCjQ_UIkkllzVKCsRRHx3XSExhgNrKxg" />
+        <param name="API_KEY_FOR_IOS" value="AIzaSyA4dQ-Cf1eV-F2Sk9TAZGojG9wPYVn-Oto" />
+    </gap:plugin>
+    <gap:splash src="splash.png" />
+    <access origin="*" />
+    <access launch-external="yes" origin="tel:*" />
+    <gap:config-file parent="/manifest" platform="android">
+        <supports-screens android:largeScreens="true" android:smallScreens="true" android:xlargeScreens="true" />
+        <application android:theme="@android:style/Theme.NoTitleBar">
+        </application>
+    </gap:config-file>
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="orientation" value="portrait" />
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="phonegap-version" value="cli-6.4.0" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="fullscreen" value="false" />
+    <preference name="android-minSdkVersion" value="16" />
+</widget>
